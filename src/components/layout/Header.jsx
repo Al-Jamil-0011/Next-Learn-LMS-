@@ -38,14 +38,10 @@ export default function Header({ page }) {
               <button type="button" aria-pressed={lang === 'bn'} onClick={() => setLang('bn')}>বাংলা</button>
               <button type="button" aria-pressed={lang === 'en'} onClick={() => setLang('en')}>EN</button>
             </div>
-            <button
-              type="button"
-              className="btn btn-line btn-sm hide-m"
-              onClick={() => toast(lang === 'bn' ? 'লগ ইন এই ডেমোর অংশ নয়' : 'Log in is not part of this demo')}
-            >
+            <Link to="/login" className="btn btn-line btn-sm hide-m">
               <span>{t('login')}</span>
-            </button>
-            <Link to="/courses" className="btn btn-sm hide-m">
+            </Link>
+            <Link to="/signup" className="btn btn-sm hide-m">
               <span>{t('signup')}</span>
             </Link>
             <button
@@ -62,7 +58,15 @@ export default function Header({ page }) {
         </div>
         <nav className={`mnav${menuOpen ? ' on' : ''}`} id="mnav" aria-label="Mobile">
           {links(() => setMenuOpen(false))}
-          <button type="button" className="btn btn-line" style={{ marginTop: 12 }} onClick={toggleLang}>
+          <div className="mnav-auth" style={{ display: 'flex', gap: 8, marginTop: 12 }}>
+            <Link to="/login" className="btn btn-line btn-sm" style={{ flex: 1 }} onClick={() => setMenuOpen(false)}>
+              <span>{t('login')}</span>
+            </Link>
+            <Link to="/signup" className="btn btn-sm" style={{ flex: 1 }} onClick={() => setMenuOpen(false)}>
+              <span>{t('signup')}</span>
+            </Link>
+          </div>
+          <button type="button" className="btn btn-line" style={{ marginTop: 10 }} onClick={toggleLang}>
             <span>বাংলা / English</span>
           </button>
         </nav>

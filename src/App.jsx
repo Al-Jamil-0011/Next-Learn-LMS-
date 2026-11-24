@@ -9,8 +9,10 @@ import CoursePage from './pages/CoursePage.jsx';
 import CoursesPage from './pages/CoursesPage.jsx';
 import FreeClassPage from './pages/FreeClassPage.jsx';
 import HomePage from './pages/HomePage.jsx';
+import LoginPage from './pages/LoginPage.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 import RefundPage from './pages/RefundPage.jsx';
+import SignupPage from './pages/SignupPage.jsx';
 import StoriesPage from './pages/StoriesPage.jsx';
 import TeachPage from './pages/TeachPage.jsx';
 import VerifyPage from './pages/VerifyPage.jsx';
@@ -32,6 +34,8 @@ export default function App() {
               <Route path="/teach" element={<TeachPage />} />
               <Route path="/verify" element={<VerifyPage />} />
               <Route path="/refund-policy" element={<RefundPage />} />
+              <Route path="/signup" element={<SignupPage />} />
+              <Route path="/login" element={<LoginPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Layout>
           </CatalogueProvider>

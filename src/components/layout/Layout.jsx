@@ -53,8 +53,10 @@ export default function Layout({ children }) {
     const course = page === 'course' ? COURSES.find((c) => c.id === parseInt(location.pathname.split('/')[2], 10)) : null;
     const nav = NAV.find((n) => n.page === page);
     const companyKeys = { about: 'f_a', teach: 'f_t', verify: 'f_v', 'refund-policy': 'f_r' };
+    const authKeys = { signup: 'signup', login: 'login' };
     const companyLabel = companyKeys[page] ? t(companyKeys[page]) : null;
-    setLabel(course ? course.s : nav ? t(nav.key) : companyLabel || 'NextLearn');
+    const authLabel = authKeys[page] ? t(authKeys[page]) : null;
+    setLabel(course ? course.s : nav ? t(nav.key) : companyLabel || authLabel || 'NextLearn');
     setPhase('cover');
     let t2;
     const t1 = setTimeout(() => {

@@ -4,6 +4,7 @@ import App from './App.jsx';
 import './styles/base.css';
 import './styles/sections.css';
 import './styles/company.css';
+import './styles/auth.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

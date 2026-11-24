@@ -71,6 +71,8 @@ import twHeroImg from '../assets/photos/teach-hero.webp';
 import twStudioImg from '../assets/photos/teach-studio.webp';
 import vcEmployerImg from '../assets/photos/verify-employer.webp';
 import rfSupportImg from '../assets/photos/refund-support.webp';
+import auSignupImg from '../assets/photos/au-signup.webp';
+import auLoginImg from '../assets/photos/au-login.webp';
 
 export const IMAGES = {
   // Home page slots
@@ -153,4 +155,8 @@ export const IMAGES = {
   tw_studio: { src: twStudioImg, alt: 'Professional class recording studio interior with lights, teleprompter and camera', pos: 'center' },
   vc_employer: { src: vcEmployerImg, alt: 'HR hiring manager checking an applicant certificate verification profile on laptop', pos: 'center' },
   rf_support: { src: rfSupportImg, alt: 'Friendly customer support specialist wearing headset helping a learner', pos: 'center' },
+
+  // Authentication pages slots
+  au_signup: { src: auSignupImg, alt: 'Cheerful young Bangladeshi learner with a laptop in a bright modern setting', pos: 'center 20%' },
+  au_login: { src: auLoginImg, alt: 'Focused Bangladeshi professional returning to study in a warm modern office setting', pos: 'center 20%' },
 };

@@ -10,5 +10,5 @@ export const NAV = [
 /** Page id for a pathname, e.g. /course/4-mern-stack -> course */
 export const pageOf = (pathname) => {
   const p = pathname.split('/')[1] || 'home';
-  return ['courses', 'course', 'stories', 'free', 'contact', 'about', 'teach', 'verify', 'refund-policy'].includes(p) ? p : 'home';
+  return ['courses', 'course', 'stories', 'free', 'contact', 'about', 'teach', 'verify', 'refund-policy', 'signup', 'login'].includes(p) ? p : 'home';
 };
