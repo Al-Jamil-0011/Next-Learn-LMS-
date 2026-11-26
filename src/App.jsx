@@ -4,6 +4,7 @@ import { AppProvider } from './context/AppContext.jsx';
 import { CatalogueProvider } from './context/CatalogueContext.jsx';
 import { LanguageProvider } from './context/LanguageContext.jsx';
 import AboutPage from './pages/AboutPage.jsx';
+import CareerPage from './pages/CareerPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import CoursePage from './pages/CoursePage.jsx';
 import CoursesPage from './pages/CoursesPage.jsx';
@@ -28,6 +29,7 @@ export default function App() {
               <Route path="/courses" element={<CoursesPage />} />
               <Route path="/course/:slug" element={<CoursePage />} />
               <Route path="/stories" element={<StoriesPage />} />
+              <Route path="/career" element={<CareerPage />} />
               <Route path="/free" element={<FreeClassPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/about" element={<AboutPage />} />

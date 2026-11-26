@@ -13,6 +13,7 @@ export function AppProvider({ children }) {
 
   const [enrolled, setEnrolled] = useState(() => store.get('nl-enrolled', []));
   const [enrolCourse, setEnrolCourse] = useState(null);
+  const [freePopupOpen, setFreePopupOpen] = useState(false);
   const [sideOpen, setSideOpen] = useState(false);
 
   const toast = useCallback((msg) => {
@@ -35,21 +36,34 @@ export function AppProvider({ children }) {
 
   const openEnrol = useCallback((course, trigger) => {
     lastFocus.current = trigger || document.activeElement;
+    setFreePopupOpen(false);
     setEnrolCourse(course);
+  }, []);
+
+  const openFreePopup = useCallback((trigger) => {
+    lastFocus.current = trigger || document.activeElement;
+    setFreePopupOpen(true);
+  }, []);
+
+  const closeFreePopup = useCallback((silent) => {
+    setFreePopupOpen(false);
+    const el = lastFocus.current;
+    if (!silent && el && el.focus && document.contains(el)) el.focus();
   }, []);
 
   const closeAll = useCallback((silent) => {
     setEnrolCourse(null);
+    setFreePopupOpen(false);
     setSideOpen(false);
     const el = lastFocus.current;
     if (!silent && el && el.focus && document.contains(el)) el.focus();
   }, []);
 
-  const overlayOn = !!enrolCourse || sideOpen;
+  const overlayOn = !!enrolCourse || sideOpen || freePopupOpen;
 
   useEffect(() => {
-    document.body.style.overflow = sideOpen ? 'hidden' : '';
-  }, [sideOpen]);
+    document.body.style.overflow = sideOpen || freePopupOpen ? 'hidden' : '';
+  }, [sideOpen, freePopupOpen]);
 
   useEffect(() => {
     if (!overlayOn) return undefined;
@@ -63,9 +77,10 @@ export function AppProvider({ children }) {
       toast, toastMsg, toastOn, confetti, confettiRef,
       enrolled, enroll, isEnrolled: (id) => enrolled.includes(id),
       enrolCourse, openEnrol, closeAll,
+      freePopupOpen, openFreePopup, closeFreePopup,
       sideOpen, setSideOpen, overlayOn,
     }),
-    [toast, toastMsg, toastOn, confetti, enrolled, enroll, enrolCourse, openEnrol, closeAll, sideOpen, overlayOn],
+    [toast, toastMsg, toastOn, confetti, enrolled, enroll, enrolCourse, openEnrol, closeAll, freePopupOpen, openFreePopup, closeFreePopup, sideOpen, overlayOn],
   );
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }

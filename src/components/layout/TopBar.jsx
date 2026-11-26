@@ -15,7 +15,6 @@ export default function TopBar() {
           <a href="tel:09610000000" className="hide-s">09610-000000</a>
         </div>
         <div className="tr">
-          <Link to="/free">{t('tb2')}</Link>
           <Social />
         </div>
       </div>

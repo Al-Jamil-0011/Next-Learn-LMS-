@@ -6,6 +6,7 @@ import { COURSES } from '../../data/courses.js';
 import usePointerEffects from '../../hooks/usePointerEffects.js';
 import { prefersReducedMotion } from '../../utils/format.js';
 import Confetti from '../common/Confetti.jsx';
+import FreeClassPopup from '../common/FreeClassPopup.jsx';
 import IconSprite from '../common/IconSprite.jsx';
 import Toast from '../common/Toast.jsx';
 import EnrolModal from '../enrol/EnrolModal.jsx';
@@ -91,6 +92,7 @@ export default function Layout({ children }) {
       <Footer />
       <div className={`overlay${overlayOn ? ' on' : ''}`} onClick={() => closeAll()} />
       <EnrolModal />
+      <FreeClassPopup />
       <Curtain phase={phase} label={label} />
       <Confetti />
       <Toast />

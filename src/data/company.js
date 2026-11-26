@@ -585,3 +585,224 @@ export const REFUND_DATA = {
     }
   ]
 };
+
+export const CAREER_DATA = {
+  supportPillars: [
+    {
+      icon: 'proj',
+      bg: '#ECEFFF',
+      fg: '#2F47E8',
+      en: {
+        title: 'Portfolio & GitHub Review',
+        desc: 'Industry mentors review your live projects, Figma case studies, and code repositories so employers see job-ready proof.'
+      },
+      bn: {
+        title: 'পোর্টফোলিও ও গিটহাব রিভিউ',
+        desc: 'আপনার লাইভ প্রজেক্ট, ফিগমা কেস স্টাডি ও কোড রিপোজিটরি মেন্টররা রিভিউ করে চাকরি-উপযোগী করে তোলেন।'
+      }
+    },
+    {
+      icon: 'award',
+      bg: '#E2F7EF',
+      fg: '#0E8A5F',
+      en: {
+        title: 'CV & LinkedIn Makeover',
+        desc: 'ATS-friendly resume templates and 1-on-1 LinkedIn profile optimization tailored to Bangladesh & remote tech recruiters.'
+      },
+      bn: {
+        title: 'সিভি ও লিংকডইন অপ্টিমাইজেশন',
+        desc: 'দেশি-বিদেশি রিক্রুটারদের উপযোগী ATS-ফ্রেন্ডলি সিভি ও প্রফেশনাল লিংকডইন প্রোফাইল তৈরিতে সরাসরি সহায়তা।'
+      }
+    },
+    {
+      icon: 'mic',
+      bg: '#FFF5D6',
+      fg: '#B07A00',
+      en: {
+        title: 'Mock Interviews & Feedback',
+        desc: 'Practice technical, design, and behavioral interviews with senior hiring leads and receive actionable scorecards.'
+      },
+      bn: {
+        title: 'মক ইন্টারভিউ ও ফিডব্যাক',
+        desc: 'অভিজ্ঞ হায়ারিং লিডদের সাথে টেকনিক্যাল ও এইচআর মক ইন্টারভিউ দিয়ে আত্মবিশ্বাস ও প্রস্তুতি শানিয়ে নিন।'
+      }
+    },
+    {
+      icon: 'brief',
+      bg: '#FFEAE5',
+      fg: '#D9442A',
+      en: {
+        title: 'Hiring Partner Referrals',
+        desc: 'Top course graduates get fast-tracked to 60+ local startups, agencies, and remote companies hiring NextLearn alumni.'
+      },
+      bn: {
+        title: 'হায়ারিং পার্টনার রেফারেল',
+        desc: 'কোর্সে ভালো করা শিক্ষার্থীরা ৬০+ টেক স্টার্টআপ, এজেন্সি ও রিমোট কোম্পানিতে সরাসরি ইন্টারভিউ সুযোগ পান।'
+      }
+    }
+  ],
+  tracks: [
+    {
+      id: 'uiux',
+      cat: 'design',
+      icon: 'pen',
+      accent: 'linear-gradient(135deg, #FF7A5C, #D93A1C)',
+      en: {
+        badge: 'High Demand',
+        title: 'Product & UI/UX Designer',
+        salary: '৳35,000 – ৳95,000 / mo',
+        duration: '4 Months · 3 Real Case Studies',
+        desc: 'Master user research, wireframing, Figma design systems, and build a 3-project portfolio ready for startups and freelance clients.'
+      },
+      bn: {
+        badge: 'সর্বাধিক চাহিদা',
+        title: 'প্রোডাক্ট ও UI/UX ডিজাইনার',
+        salary: '৳৩৫,০০০ – ৳৯৫,০০০ / মাস',
+        duration: '৪ মাস · ৩টি বাস্তব কেস স্টাডি',
+        desc: 'ইউজার রিসার্চ, ওয়্যারফ্রেম ও ফিগমা ডিজাইন সিস্টেম শিখে স্টার্টআপ ও ফ্রিল্যান্সিংয়ের জন্য পূর্ণাঙ্গ পোর্টফোলিও তৈরি করুন।'
+      }
+    },
+    {
+      id: 'mern',
+      cat: 'tech',
+      icon: 'code',
+      accent: 'linear-gradient(135deg, #4C63FF, #131C63)',
+      en: {
+        badge: 'Tech Track',
+        title: 'Full-Stack MERN Engineer',
+        salary: '৳40,000 – ৳1,20,000 / mo',
+        duration: '6 Months · 5 Production Apps',
+        desc: 'Go from JavaScript fundamentals to React, Node.js, MongoDB, cloud deployment, and real technical interview prep.'
+      },
+      bn: {
+        badge: 'টেক ক্যারিয়ার',
+        title: 'ফুল-স্ট্যাক MERN ইঞ্জিনিয়ার',
+        salary: '৳৪০,০০০ – ৳১,২০,০০০ / মাস',
+        duration: '৬ মাস · ৫টি প্রোডাকশন অ্যাপ',
+        desc: 'জাভাস্ক্রিপ্ট, রিঅ্যাক্ট, নোডজেএস ও মঙ্গোডিবি শিখে ক্লাউড ডেপ্লয়মেন্ট ও টেকনিক্যাল ইন্টারভিউয়ের সম্পূর্ণ প্রস্তুতি নিন।'
+      }
+    },
+    {
+      id: 'marketing',
+      cat: 'marketing',
+      icon: 'mega',
+      accent: 'linear-gradient(135deg, #2DBB8F, #0B6B51)',
+      en: {
+        badge: 'Growth & AI',
+        title: 'Performance & Digital Marketer',
+        salary: '৳28,000 – ৳85,000 / mo',
+        duration: '3 Months · Live Ad Campaigns',
+        desc: 'Run high-ROI Meta and Google ad campaigns, build AI-assisted funnels, and manage growth for e-commerce brands.'
+      },
+      bn: {
+        badge: 'গ্রোথ ও AI',
+        title: 'পারফরম্যান্স ও ডিজিটাল মার্কেটার',
+        salary: '৳২৮,০০০ – ৳৮৫,০০০ / মাস',
+        duration: '৩ মাস · লাইভ অ্যাড ক্যাম্পেইন',
+        desc: 'মেটা ও গুগল অ্যাডস, AI কনটেন্ট স্ট্র্যাটেজি এবং ই-কমার্স গ্রোথ ফানেল পরিচালনায় দক্ষ হয়ে উঠুন।'
+      }
+    },
+    {
+      id: 'data',
+      cat: 'office',
+      icon: 'chart',
+      accent: 'linear-gradient(135deg, #1FA87A, #0A5C45)',
+      en: {
+        badge: 'Corporate',
+        title: 'Data & Business Intelligence Analyst',
+        salary: '৳35,000 – ৳90,000 / mo',
+        duration: '3 Months · 6 Business Dashboards',
+        desc: 'Turn messy business spreadsheets into executive Power BI dashboards, automated reports, and SQL/Excel insights.'
+      },
+      bn: {
+        badge: 'কর্পোরেট',
+        title: 'ডেটা ও BI অ্যানালিস্ট',
+        salary: '৳৩৫,০০০ – ৳৯০,০০০ / মাস',
+        duration: '৩ মাস · ৬টি বিজনেস ড্যাশবোর্ড',
+        desc: 'এক্সেল, পাওয়ার কোয়েরি ও পাওয়ার BI ব্যবহার করে যেকোনো প্রতিষ্ঠানের জন্য ডিসিশন-রেডি বিজনেস ড্যাশবোর্ড তৈরি করুন।'
+      }
+    }
+  ],
+  openings: [
+    {
+      id: 'fe-mentor',
+      dept: 'academics',
+      en: {
+        title: 'Frontend / React Lead Mentor (Part-time)',
+        deptLabel: 'Academics',
+        type: 'Part-time · Evening',
+        loc: 'Remote (Bangladesh)',
+        salary: '৳45,000 – ৳75,000 + Batch Bonus',
+        desc: 'Lead live evening sessions in natural Bangla, review student React projects, and mentor learners toward their first engineering role.'
+      },
+      bn: {
+        title: 'ফ্রন্টএন্ড / React লিড মেন্টর (পার্ট-টাইম)',
+        deptLabel: 'অ্যাকাডেমিক্স',
+        type: 'পার্ট-টাইম · সন্ধ্যা',
+        loc: 'রিমোট (বাংলাদেশ)',
+        salary: '৳৪৫,০০০ – ৳৭৫,০০০ + ব্যাচ বোনাস',
+        desc: 'সহজ বাংলায় সন্ধ্যার লাইভ ক্লাস পরিচালনা, শিক্ষার্থীদের প্রজেক্ট রিভিউ এবং প্রথম চাকরির জন্য দিকনির্দেশনা প্রদান।'
+      }
+    },
+    {
+      id: 'fullstack-eng',
+      dept: 'engineering',
+      en: {
+        title: 'Full-Stack Software Engineer (LMS Platform)',
+        deptLabel: 'Engineering',
+        type: 'Full-time',
+        loc: 'Banani, Dhaka / Hybrid',
+        salary: '৳70,000 – ৳1,10,000 / mo',
+        desc: 'Build fast, low-bandwidth video streaming, interactive quizzes, and automated payment workflows for 48,000+ learners.'
+      },
+      bn: {
+        title: 'ফুল-স্ট্যাক সফটওয়্যার ইঞ্জিনিয়ার (LMS প্ল্যাটফর্ম)',
+        deptLabel: 'ইঞ্জিনিয়ারিং',
+        type: 'ফুল-টাইম',
+        loc: 'বনানী, ঢাকা / হাইব্রিড',
+        salary: '৳৭০,০০০ – ৳১,১০,০০০ / মাস',
+        desc: '৪৮,০০০+ শিক্ষার্থীর জন্য দ্রুতগতির লার্নিং ড্যাশবোর্ড, কুইজ ইঞ্জিন ও অটোমেটেড পেমেন্ট সিস্টেম তৈরি।'
+      }
+    },
+    {
+      id: 'student-success',
+      dept: 'academics',
+      en: {
+        title: 'Student Success & Placement Coordinator',
+        deptLabel: 'Career Cell',
+        type: 'Full-time',
+        loc: 'Dhaka / Hybrid',
+        salary: '৳30,000 – ৳45,000 / mo',
+        desc: 'Guide graduates with CV reviews, organize mock interviews, and connect top performers with our hiring partner network.'
+      },
+      bn: {
+        title: 'স্টুডেন্ট সাকসেস ও প্লেসমেন্ট কোঅর্ডিনেটর',
+        deptLabel: 'ক্যারিয়ার সেল',
+        type: 'ফুল-টাইম',
+        loc: 'ঢাকা / হাইব্রিড',
+        salary: '৳৩০,০০০ – ৳৪৫,০০০ / মাস',
+        desc: 'শিক্ষার্থীদের সিভি রিভিউ, মক ইন্টারভিউ আয়োজন এবং হায়ারিং পার্টনারদের সাথে প্লেসমেন্ট সমন্বয় করা।'
+      }
+    },
+    {
+      id: 'growth-video',
+      dept: 'growth',
+      en: {
+        title: 'Creative Motion & Video Producer',
+        deptLabel: 'Growth & Media',
+        type: 'Full-time',
+        loc: 'Banani Studio, Dhaka',
+        salary: '৳35,000 – ৳55,000 / mo',
+        desc: 'Shoot and edit course trailers, learner success stories, and engaging short-form educational reels for social channels.'
+      },
+      bn: {
+        title: 'ক্রিয়েটিভ মোশন ও ভিডিও প্রডিউসার',
+        deptLabel: 'গ্রোথ ও মিডিয়া',
+        type: 'ফুল-টাইম',
+        loc: 'বনানী স্টুডিও, ঢাকা',
+        salary: '৳৩৫,০০০ – ৳৫৫,০০০ / মাস',
+        desc: 'কোর্স ট্রেইলার, শিক্ষার্থীদের সাফল্যের গল্প এবং সোশ্যাল মিডিয়ার জন্য আকর্ষণীয় এডুকেশনাল ভিডিও তৈরি।'
+      }
+    }
+  ]
+};
