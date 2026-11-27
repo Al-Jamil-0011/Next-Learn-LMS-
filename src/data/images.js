@@ -3,6 +3,7 @@ import howLiveClassImg from '../assets/photos/how-live-class.webp';
 import howProjectReviewImg from '../assets/photos/how-project-review.webp';
 import howProgressImg from '../assets/photos/how-progress.webp';
 import howCertificateImg from '../assets/photos/how-certificate.webp';
+import whyCertImg from '../assets/photos/why-certificate.jpg';
 import freeClassImg from '../assets/photos/free-class.webp';
 
 import mentorFarhanaImg from '../assets/photos/mentor-farhana.webp';
@@ -81,6 +82,7 @@ export const IMAGES = {
   how2: { src: howProjectReviewImg, alt: 'Mentor and student discussing user interface design together in front of a computer monitor in a modern studio' },
   how3: { src: howProgressImg, alt: 'Close-up of hands holding a smartphone displaying learning analytics and course progress metrics' },
   how4: { src: howCertificateImg, alt: 'Smiling graduate proudly holding a printed certificate of course completion' },
+  whyCert: { src: whyCertImg, alt: 'Mentor handing a course completion certificate to a smiling student in a bright classroom', pos: 'center 25%' },
   free: { src: freeClassImg, alt: 'Group of young Bangladeshi students collaborating with laptops during an interactive workshop in a modern workspace' },
 
   // Mentors

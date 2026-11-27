@@ -1,25 +1,34 @@
 import { useLang } from '../../context/LanguageContext.jsx';
 import useCountUp from '../../hooks/useCountUp.js';
-import Icon from '../common/Icon.jsx';
 import Reveal from '../common/Reveal.jsx';
+import StatIcons3D, { StatDefs3D } from './hero/StatIcons3D.jsx';
 
 const STATS = [
-  { icon: 'users', bg: 'var(--cobalt-50)', fg: 'var(--cobalt)', to: 48000, suffix: '+', key: 'sn1' },
-  { icon: 'book', bg: 'var(--saffron-50)', fg: '#B07A00', to: 14, suffix: '', key: 'sn2' },
-  { icon: 'brief', bg: 'var(--mint-50)', fg: '#0E8A5F', to: 86, suffix: '%', key: 'sn3' },
-  { icon: 'globe', bg: 'var(--coral-50)', fg: 'var(--coral)', to: 64, suffix: '', key: 'sn4' },
+  { icon: 'people', to: 48000, suffix: () => '+', lKey: 'sl1', sKey: 'ss1' },
+  { icon: 'books', to: 8, suffix: (bn) => (bn ? 'টি' : ''), lKey: 'sl2', sKey: 'ss2' },
+  { icon: 'star', to: 4.8, suffix: () => '★', lKey: 'sl3', sKey: 'ss3' },
+  { icon: 'medal', to: 100, suffix: () => '%', lKey: 'sl4', sKey: 'ss4' },
+  { icon: 'briefcase', to: 86, suffix: () => '%', lKey: 'sl5', sKey: 'ss5' },
+  { icon: 'globe', to: 64, suffix: () => '', lKey: 'sl6', sKey: 'ss6' },
 ];
 
-function Stat({ s }) {
-  const { t } = useLang();
+function Stat({ s, index }) {
+  const { t, lang, num } = useLang();
   const [ref, val] = useCountUp(s.to);
+  const display = lang === 'bn' ? num(val) : val;
+  const suf = s.suffix(lang === 'bn');
+
   return (
-    <div className="st">
-      <span className="si" style={{ background: s.bg, color: s.fg }}><Icon name={s.icon} /></span>
-      <div>
-        <b className="num"><span ref={ref}>{val}</span>{s.suffix}</b>
-        <span>{t(s.key)}</span>
+    <div className="st" style={{ '--st-d': `${index * -0.8}s` }}>
+      <div className="si3d">
+        <StatIcons3D name={s.icon} />
       </div>
+      <div className="st-val num">
+        <span ref={ref}>{display}</span>
+        {suf && <sup>{suf}</sup>}
+      </div>
+      <b className="st-lbl">{t(s.lKey)}</b>
+      <span className="st-sub">{t(s.sKey)}</span>
     </div>
   );
 }
@@ -27,9 +36,12 @@ function Stat({ s }) {
 export default function Stats() {
   return (
     <div className="stats">
+      <StatDefs3D />
       <div className="wrap">
-        <Reveal className="stats-in">
-          {STATS.map((s) => <Stat key={s.key} s={s} />)}
+        <Reveal className="deck">
+          {STATS.map((s, idx) => (
+            <Stat key={s.lKey} s={s} index={idx} />
+          ))}
         </Reveal>
       </div>
     </div>

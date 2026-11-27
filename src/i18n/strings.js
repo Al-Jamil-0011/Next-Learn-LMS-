@@ -5,6 +5,7 @@ export const UI={en:{live:'Live',self:'Self-paced',starts:'Starts',any:'Start an
  bn:{live:'লাইভ',self:'সেলফ-পেসড',starts:'শুরু',any:'যেকোনো সময় শুরু',life:'আজীবন অ্যাক্সেস',left:'আসন বাকি',filled:'পূর্ণ',inst:n=>`অথবা ${bnD(n)} × `,view:'দেখুন',enrol:'ভর্তি হোন',reviews:'রিভিউ',empty:'মিলছে না। অন্য শব্দ লিখুন বা ফিল্টার মুছুন।',reset:'ফিল্টার মুছুন',all:'সব কোর্স',more:'আরও কোর্স',enrolled:'ভর্তি হয়েছেন',courses:'টি কোর্স',viewPath:'এই পাথের কোর্স',yrs:'বছরের অভিজ্ঞতা',lrn:'শিক্ষার্থী',watch:'গল্পটি দেখুন',goal:'লক্ষ্য অর্জন'}};
 
 export const ROT={en:['design','coding','IELTS','marketing','Excel','editing'],bn:['ডিজাইন','কোডিং','IELTS','মার্কেটিং','এক্সেল','এডিটিং']};
+export const HERO_ROT={en:['editing','design','coding','marketing','IELTS'],bn:['এডিটিং','ডিজাইন','কোডিং','মার্কেটিং','IELTS']};
 
 export const T5={en:{avail:n=>`<b>${n}</b> courses available now`,enroll:'Enroll now',rec:'Recorded',liveB:b=>`Live Batch ${b}`,prev:'Prev',next:'Next',with:'with',beg:'Beginner',int:'Intermediate',alll:'All levels',exam:'HSC & exams',lt2:'Under ৳2,000',mid:'৳2,000 to ৳5,000',gt5:'Above ৳5,000',
    live:'Live online',self:'Recorded',career:'Career tracks',examT:'Exam prep',free:'Free classes',corp:'Corporate',liveS:'Evening classes with a mentor',selfS:'Learn any time, lifetime access',careerS:'Job-ready paths',examS:'IELTS, HSC and admission',freeS:'Try before you pay',corpS:'Train your team',

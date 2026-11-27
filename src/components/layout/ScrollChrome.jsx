@@ -1,16 +1,23 @@
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { useApp } from '../../context/AppContext.jsx';
 import { useLang } from '../../context/LanguageContext.jsx';
 import useScroll from '../../hooks/useScroll.js';
-import { prefersReducedMotion } from '../../utils/format.js';
+import { coursePath, prefersReducedMotion } from '../../utils/format.js';
+import { getNextBatchCourse } from '../../utils/nextBatch.js';
 import Icon from '../common/Icon.jsx';
 
 /** Scroll progress line, back-to-top button and the mobile bottom CTA bar. */
 export default function ScrollChrome() {
   const { t } = useLang();
+  const { openEnrol, isEnrolled } = useApp();
+  const { pathname } = useLocation();
   const prog = useRef(null);
   const [mbar, setMbar] = useState(false);
   const [top, setTop] = useState(false);
+  const isHome = pathname === '/';
+  const nextCourse = getNextBatchCourse();
+  const enrolled = isEnrolled(nextCourse.id);
 
   useScroll(() => {
     const y = window.scrollY;
@@ -32,8 +39,25 @@ export default function ScrollChrome() {
         <Icon name="arrow" small style={{ transform: 'rotate(-90deg)' }} />
       </button>
       <div className={`mbar${mbar ? ' on' : ''}`}>
-        <Link to="/free" className="btn btn-line"><span>{t('cta2')}</span></Link>
-        <Link to="/courses" className="btn"><span>{t('cta1')}</span></Link>
+        {isHome ? (
+          <>
+            {enrolled ? (
+              <Link to={coursePath(nextCourse)} className="btn ecta-btn-mint">
+                <span>{t('ec_continue')}</span>
+              </Link>
+            ) : (
+              <button type="button" className="btn ecta-shimmer" onClick={(e) => openEnrol(nextCourse, e.currentTarget)}>
+                <span>{t('ec_enroll')}</span>
+              </button>
+            )}
+            <Link to="/free" className="btn btn-line"><span>{t('cta2')}</span></Link>
+          </>
+        ) : (
+          <>
+            <Link to="/free" className="btn btn-line"><span>{t('cta2')}</span></Link>
+            <Link to="/courses" className="btn"><span>{t('cta1')}</span></Link>
+          </>
+        )}
       </div>
     </>
   );
