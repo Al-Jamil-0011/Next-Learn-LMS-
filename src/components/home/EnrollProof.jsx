@@ -171,10 +171,10 @@ export default function EnrollProof() {
               <Link to="/contact" className="btn btn-line ecta-btn-lg-line">
                 <span>{t('ec_prf_adv')}</span>
               </Link>
-
             </div>
+          </div>
 
-            {/* Right Interactive 3D Bento Stage */}
+          {/* Right Interactive 3D Bento Stage */}
             <div
               ref={stageRef}
               className="ecta-stage"
