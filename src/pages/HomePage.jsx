@@ -3,7 +3,6 @@ import EnrollBanner from '../components/home/EnrollBanner.jsx';
 import EnrollProof from '../components/home/EnrollProof.jsx';
 import Featured from '../components/home/Featured.jsx';
 import FinalCta from '../components/home/FinalCta.jsx';
-import FreeTeaser from '../components/home/FreeTeaser.jsx';
 import Hero from '../components/home/Hero.jsx';
 import HomeFaq from '../components/home/HomeFaq.jsx';
 import HowItWorks from '../components/home/HowItWorks.jsx';
@@ -30,7 +29,6 @@ export default function HomePage() {
       <Mentors />
       <Stories />
       <EnrollProof />
-      <FreeTeaser />
       <HomeFaq />
       <FinalCta />
       <StickyEnroll />

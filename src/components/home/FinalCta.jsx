@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ctaBannerImg from '../../assets/photos/cta-banner.jpg';
 import { useApp } from '../../context/AppContext.jsx';
 import { useLang } from '../../context/LanguageContext.jsx';
 import { coursePath, dateParts } from '../../utils/format.js';
@@ -15,11 +16,15 @@ export default function FinalCta() {
   const startDate = dateParts(nextCourse.st).full;
 
   return (
-    <section className="sec ecta-final-sec" id="final-cta">
-      <div className="wrap">
-        <Reveal className="ecta-final">
-          <div className="ecta-final-glow" aria-hidden="true" />
+    <section className="ecta-final-sec" id="final-cta">
+      <Reveal className="ecta-final">
+        <div className="ecta-final-bg" aria-hidden="true">
+          <img src={ctaBannerImg} alt="" loading="lazy" />
+        </div>
+        <div className="ecta-final-scrim" aria-hidden="true" />
+        <div className="ecta-final-glow" aria-hidden="true" />
 
+        <div className="wrap ecta-final-inner">
           <span className="pill glass ecta-final-pill">{t('ec_fin_pill')}</span>
 
           <h2 className="ecta-final-h2">
@@ -46,7 +51,7 @@ export default function FinalCta() {
                 <Arrow />
               </button>
             )}
-            <Link to="/free" className="btn ecta-btn-ghost">
+            <Link to="/free" className="btn ecta-btn-ghost ecta-final-ghost">
               <span>{t('ec_fin_free')}</span>
             </Link>
           </div>
@@ -65,8 +70,8 @@ export default function FinalCta() {
               <span>{t('ec_fin_t3')}</span>
             </span>
           </div>
-        </Reveal>
-      </div>
+        </div>
+      </Reveal>
     </section>
   );
 }

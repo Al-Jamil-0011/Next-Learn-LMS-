@@ -21,6 +21,14 @@ import studentSadiaImg from '../assets/photos/student-sadia.webp';
 import studentTanvirImg from '../assets/photos/student-tanvir.webp';
 import studentNasrinImg from '../assets/photos/student-nasrin.webp';
 
+import reelSadiaImg from '../assets/photos/reel-sadia.jpg';
+import reelTanvirImg from '../assets/photos/reel-tanvir.jpg';
+import reelNasrinImg from '../assets/photos/reel-nasrin.jpg';
+import reelRafiqImg from '../assets/photos/reel-rafiq.jpg';
+import reelLamiaImg from '../assets/photos/reel-lamia.jpg';
+import reelImranImg from '../assets/photos/reel-imran.jpg';
+import ctaBannerImg from '../assets/photos/cta-banner.jpg';
+
 import catTechImg from '../assets/photos/cat-tech.webp';
 import catDesignImg from '../assets/photos/cat-design.webp';
 import catLanguageImg from '../assets/photos/cat-language.webp';
@@ -84,6 +92,7 @@ export const IMAGES = {
   how4: { src: howCertificateImg, alt: 'Smiling graduate proudly holding a printed certificate of course completion' },
   whyCert: { src: whyCertImg, alt: 'Mentor handing a course completion certificate to a smiling student in a bright classroom', pos: 'center 25%' },
   free: { src: freeClassImg, alt: 'Group of young Bangladeshi students collaborating with laptops during an interactive workshop in a modern workspace' },
+  cta_banner: { src: ctaBannerImg, alt: 'Bangladeshi learners collaborating around laptops with a mentor in an evening academy workshop' },
 
   // Mentors
   mFarhana: { src: mentorFarhanaImg, alt: 'Farhana Akter, product designer at a fintech startup, smiling at the camera in a modern office', pos: 'center 20%' },
@@ -101,6 +110,12 @@ export const IMAGES = {
   sSadia: { src: studentSadiaImg, alt: 'Sadia Rahman, UI designer at a Dhaka startup, smiling at her desk in an office with coworkers', pos: 'center 25%' },
   sTanvir: { src: studentTanvirImg, alt: 'Tanvir Kabir, student who achieved IELTS 7.5, standing on a university campus holding folders', pos: 'center 20%' },
   sNasrin: { src: studentNasrinImg, alt: 'Nasrin Jahan, online clothing shop entrepreneur, smiling proudly in a traditional red saree', pos: 'center 20%' },
+  reel_sadia: { src: reelSadiaImg, alt: 'Sadia Rahman UI/UX design video story frame', pos: 'center 18%' },
+  reel_tanvir: { src: reelTanvirImg, alt: 'Tanvir Kabir IELTS 7.5 video story frame', pos: 'center 18%' },
+  reel_nasrin: { src: reelNasrinImg, alt: 'Nasrin Jahan digital marketing video story frame', pos: 'center 18%' },
+  reel_rafiq: { src: reelRafiqImg, alt: 'Rafiqul Islam MERN stack video story frame', pos: 'center 18%' },
+  reel_lamia: { src: reelLamiaImg, alt: 'Lamia Rahman graphic design video story frame', pos: 'center 18%' },
+  reel_imran: { src: reelImranImg, alt: 'Imran Shuvo video editing story frame', pos: 'center 18%' },
 
   // Category thumbnails
   cat_tech: { src: catTechImg, alt: 'Hands typing on a backlit laptop keyboard displaying dark-themed code on screen' },
