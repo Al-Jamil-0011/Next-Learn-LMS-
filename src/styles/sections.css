@@ -4775,6 +4775,10 @@ html[lang="bn"] .cd-hero h1 {
     inset: 4% 0 6% 0
   }
 
+  .stage.stage-vid {
+    aspect-ratio: 16/10
+  }
+
   .frame {
     padding: 6px;
     border-radius: 20px
@@ -4798,6 +4802,13 @@ html[lang="bn"] .cd-hero h1 {
     right: 10px;
     bottom: 10px;
     font-size: .86rem
+  }
+
+  .v-sound {
+    right: 10px;
+    bottom: 10px;
+    padding: 5px 10px;
+    font-size: .74rem
   }
 
   .deck {
@@ -4845,6 +4856,7 @@ html[lang="bn"] .cd-hero h1 {
   .cta-pri::after,
   .screen::after,
   .v-rip,
+  .v-sound.on .v-eq i,
   .si3d,
   .st:hover .si3d svg {
     animation: none !important

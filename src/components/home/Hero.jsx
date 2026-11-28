@@ -6,8 +6,9 @@ import { finePointer, prefersReducedMotion } from '../../utils/format.js';
 import Icon, { Arrow } from '../common/Icon.jsx';
 import HeroFlow from './hero/HeroFlow.jsx';
 import HeroVideo from './hero/HeroVideo.jsx';
+import heroVideoSrc from '../../assets/videos/nextlearn-hero-with-music.mp4';
 
-export const HERO_VIDEO = { src: null, poster: null };
+export const HERO_VIDEO = { src: heroVideoSrc, poster: null };
 
 /** Rotating highlighted word in the hero headline with dynamic measured width + saffron underline. */
 function RotatingWord({ words }) {
@@ -210,7 +211,12 @@ export default function Hero() {
         </div>
 
         <div {...heroFade(5)} className={`hero-stage-wrap ${heroFade(5).className}`}>
-          <HeroVideo src={HERO_VIDEO.src} poster={HERO_VIDEO.poster} tilt={tilt} />
+          <HeroVideo
+            src={HERO_VIDEO.src}
+            poster={HERO_VIDEO.poster}
+            tilt={tilt}
+            offScreen={offScreen}
+          />
         </div>
       </div>
     </section>

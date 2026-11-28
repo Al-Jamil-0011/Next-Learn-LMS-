@@ -800,7 +800,7 @@ svg {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.02fr) minmax(0, .98fr);
+  grid-template-columns: minmax(0, .98fr) minmax(0, 1.02fr);
   gap: clamp(28px, 4vw, 52px);
   align-items: center
 }
@@ -1140,6 +1140,10 @@ html[lang="bn"] .hero h1 {
   width: 100%
 }
 
+.stage.stage-vid {
+  aspect-ratio: 16/9.35
+}
+
 .liquid {
   position: absolute;
   inset: 2% 0;
@@ -1208,6 +1212,10 @@ html[lang="bn"] .hero h1 {
   }
 }
 
+.screen.has-vid {
+  cursor: pointer
+}
+
 .screen video {
   position: absolute;
   inset: 0;
@@ -1220,7 +1228,7 @@ html[lang="bn"] .hero h1 {
 .vid-grad {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(11, 16, 48, .45), transparent 35%, transparent 65%, rgba(11, 16, 48, .55));
+  background: linear-gradient(180deg, transparent 62%, rgba(11, 16, 48, .38));
   z-index: 1;
   pointer-events: none
 }
@@ -1324,6 +1332,90 @@ html[lang="bn"] .hero h1 {
   border: 1px solid rgba(255, 255, 255, .28);
   font-size: .9rem;
   font-weight: 600
+}
+
+.v-sound {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(11, 16, 48, .56);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, .26);
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px -6px rgba(11, 16, 48, .55);
+  transition: transform .25s var(--spring), background .25s, border-color .25s
+}
+
+.v-sound:hover,
+.v-sound:focus-visible {
+  transform: translateY(-1px);
+  background: rgba(47, 71, 232, .72);
+  border-color: rgba(255, 255, 255, .45);
+  outline-color: #fff
+}
+
+.v-sound.on {
+  background: rgba(47, 71, 232, .8);
+  border-color: rgba(143, 160, 255, .65)
+}
+
+.v-eq {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 11px
+}
+
+.v-eq i {
+  display: block;
+  width: 2px;
+  height: 4px;
+  border-radius: 2px;
+  background: currentColor;
+  opacity: .55;
+  transition: height .2s, opacity .2s
+}
+
+.v-eq i:nth-child(2) {
+  height: 7px
+}
+
+.v-eq i:nth-child(3) {
+  height: 5px
+}
+
+.v-sound.on .v-eq i {
+  opacity: 1;
+  background: var(--saffron);
+  animation: eqBar .9s ease-in-out infinite alternate
+}
+
+.v-sound.on .v-eq i:nth-child(2) {
+  animation-delay: .22s
+}
+
+.v-sound.on .v-eq i:nth-child(3) {
+  animation-delay: .44s
+}
+
+@keyframes eqBar {
+  0% {
+    height: 3px
+  }
+
+  100% {
+    height: 11px
+  }
 }
 
 /* stats strip */
