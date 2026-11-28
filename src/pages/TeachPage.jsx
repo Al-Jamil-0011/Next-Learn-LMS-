@@ -17,7 +17,7 @@ import SectionHead from '../components/home/SectionHead.jsx';
 export default function TeachPage() {
   const { t, lang, num } = useLang();
   const { toast, confetti } = useApp();
-  useDocumentTitle(lang === 'bn' ? 'আমাদের সাথে পড়ান · NextLearn' : 'Teach with us · NextLearn');
+  useDocumentTitle(lang === 'bn' ? 'আমাদের সাথে পড়ান · Technofy Bangladesh' : 'Teach with us · Technofy Bangladesh');
 
   // Calculator state
   const [students, setStudents] = useState(35);
@@ -667,7 +667,7 @@ export default function TeachPage() {
                 <span className="fi" style={{ background: 'var(--cobalt-50)', color: 'var(--cobalt)' }}>
                   <Icon name="rocket" />
                 </span>
-                <h3>{lang === 'bn' ? 'নেক্সটল্যার্ন মেন্টর সুবিধা' : 'NextLearn Mentor Perks'}</h3>
+                <h3>{lang === 'bn' ? 'Technofy Bangladesh মেন্টর সুবিধা' : 'Technofy Bangladesh Mentor Perks'}</h3>
               </div>
 
               <div className="co-perk-item">

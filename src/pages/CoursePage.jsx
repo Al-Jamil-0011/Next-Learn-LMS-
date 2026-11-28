@@ -41,7 +41,7 @@ function CourseDetails({ c }) {
   const { t, lang, ui, x, y, num } = useLang();
   const { isEnrolled, openEnrol } = useApp();
   const { onlyCategory } = useCatalogue();
-  useDocumentTitle(c.t + ' · NextLearn');
+  useDocumentTitle(c.t + ' · Technofy Bangladesh');
 
   const live = c.f === 'live';
   const enrolled = isEnrolled(c.id);

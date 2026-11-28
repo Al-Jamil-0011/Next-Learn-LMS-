@@ -19,7 +19,7 @@ export default function FreeClassPage() {
   const [err, setErr] = useState('');
   const phoneRef = useRef(null);
   const artRef = useRef(null);
-  useDocumentTitle('Free live class · NextLearn');
+  useDocumentTitle('Free live class · Technofy Bangladesh');
 
   // Gentle parallax on the photo once a real image is set.
   useScroll(() => {

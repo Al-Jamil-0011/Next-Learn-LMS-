@@ -5093,6 +5093,10 @@ html[lang="bn"] .cd-hero h1 {
 
 @media (max-width:640px) {
 
+  .hdr .tb-logo-words {
+    display: none
+  }
+
   .topbar .hide-s,
   .topbar .tr {
     display: none
@@ -5379,6 +5383,7 @@ html[lang="bn"] .cd-hero h1 {
 
   .tilt,
   .rot.anim-w,
+  .tb-logo-badge,
   .si3d svg {
     transition: none !important;
     transform: none !important

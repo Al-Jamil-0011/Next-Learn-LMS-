@@ -1,6 +1,6 @@
-/* ============ NextLearn v5 — course store ============
+/* ============ Technofy Bangladesh — course store ============
    Layout: UY Lab's course-page skeleton (type tiles, filter sidebar + 3-up grid, newsletter band over a
-   navy footer) on a 1240px container; NextLearn's own navy/cobalt/saffron finish, designed course banners,
+   navy footer) on a 1240px container; Technofy Bangladesh's navy/cobalt/saffron finish, designed course banners,
    and the motion system from v2–v4. Deliberately single light theme with a navy footer. */
 :root {
   color-scheme: light;
@@ -542,6 +542,78 @@ svg {
 .logo svg {
   width: 32px;
   height: 32px
+}
+
+/* Technofy Bangladesh reusable logo */
+.tb-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex: none
+}
+
+.tb-logo-badge {
+  display: inline-grid;
+  place-items: center;
+  border-radius: 11px;
+  flex: none;
+  transition: transform .28s var(--spring), box-shadow .28s var(--ease)
+}
+
+.tb-logo-svg,
+.logo .tb-logo-svg {
+  width: var(--tb-sz, 40px);
+  height: var(--tb-sz, 40px);
+  display: block
+}
+
+.tb-logo:hover .tb-logo-badge,
+.logo:hover .tb-logo-badge,
+.au-brand:hover .tb-logo-badge,
+.au-card-logo:hover .tb-logo-badge {
+  transform: scale(1.05);
+  box-shadow: 0 8px 22px -4px rgba(124, 58, 237, .44), 0 4px 12px -2px rgba(6, 182, 212, .32)
+}
+
+.tb-logo-words {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  text-align: left
+}
+
+.tb-logo-name {
+  font-family: "Inter", var(--f-sans);
+  font-weight: 800;
+  font-size: clamp(1.06rem, 1.35vw, 1.24rem);
+  letter-spacing: -.03em;
+  line-height: 1.04
+}
+
+.tb-logo-light .tb-logo-name {
+  color: var(--ink)
+}
+
+.tb-logo-dark .tb-logo-name {
+  color: #fff
+}
+
+.tb-logo-sub {
+  font-family: "Inter", var(--f-sans);
+  font-weight: 700;
+  font-size: .56rem;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  margin-top: 3px
+}
+
+.tb-logo-light .tb-logo-sub {
+  color: var(--muted)
+}
+
+.tb-logo-dark .tb-logo-sub {
+  color: rgba(210, 218, 250, .74)
 }
 
 .nav {

@@ -8,7 +8,7 @@ import useDocumentTitle from '../hooks/useDocumentTitle.js';
 
 export default function CoursesPage() {
   const { t } = useLang();
-  useDocumentTitle('All courses · NextLearn');
+  useDocumentTitle('All courses · Technofy Bangladesh');
   return (
     <>
       <PageHero bg="bg_courses" crumb={t('nav1')} title={t('pc_t')} sub={t('pc_s')}>

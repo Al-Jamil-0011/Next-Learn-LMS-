@@ -15,7 +15,7 @@ import StickyEnroll from '../components/layout/StickyEnroll.jsx';
 import useDocumentTitle from '../hooks/useDocumentTitle.js';
 
 export default function HomePage() {
-  useDocumentTitle('NextLearn: learn practical skills in Bangla');
+  useDocumentTitle('Technofy Bangladesh — Learn practical skills in Bangla');
   return (
     <>
       <Hero />

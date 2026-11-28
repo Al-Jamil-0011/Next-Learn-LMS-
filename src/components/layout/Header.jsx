@@ -4,7 +4,7 @@ import { useApp } from '../../context/AppContext.jsx';
 import { useLang } from '../../context/LanguageContext.jsx';
 import useScroll from '../../hooks/useScroll.js';
 import Icon from '../common/Icon.jsx';
-import { LogoMark } from '../common/Logo.jsx';
+import Logo from '../Logo.jsx';
 import { NAV } from './navItems.js';
 
 export default function Header({ page }) {
@@ -26,9 +26,8 @@ export default function Header({ page }) {
     <header className={`hdr${stuck ? ' stuck' : ''}`}>
       <div className="wrap">
         <div className="hdr-in">
-          <Link to="/" className="logo" aria-label="NextLearn home">
-            <LogoMark />
-            <span>NextLearn</span>
+          <Link to="/" className="logo" aria-label="Technofy Bangladesh home">
+            <Logo variant="full" theme="light" />
           </Link>
           <nav className="nav" aria-label="Main">
             {links()}

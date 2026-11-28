@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import AuthVisual from '../components/auth/AuthVisual.jsx';
 import SocialButtons from '../components/auth/SocialButtons.jsx';
 import Icon from '../components/common/Icon.jsx';
+import Logo from '../components/Logo.jsx';
 import { useApp } from '../context/AppContext.jsx';
 import { useLang } from '../context/LanguageContext.jsx';
 import useDocumentTitle from '../hooks/useDocumentTitle.js';
@@ -14,7 +15,7 @@ export default function LoginPage() {
   const { toast } = useApp();
   const navigate = useNavigate();
 
-  useDocumentTitle(lang === 'bn' ? 'লগ ইন · NextLearn' : 'Log in · NextLearn');
+  useDocumentTitle(lang === 'bn' ? 'লগ ইন · Technofy Bangladesh' : 'Log in · Technofy Bangladesh');
 
   // Mode: 'password' or 'otp'
   const [authMode, setAuthMode] = useState('password');
@@ -180,6 +181,9 @@ export default function LoginPage() {
 
         {/* Right Form Card */}
         <div className="au-card">
+          <Link to="/" className="au-card-logo" aria-label="Technofy Bangladesh home">
+            <Logo variant="full" theme="light" />
+          </Link>
           <div className="au-head au-stagger-1">
             <h1 className="au-title">{t('au_login_title')}</h1>
             <p className="au-sub">{t('au_login_sub')}</p>

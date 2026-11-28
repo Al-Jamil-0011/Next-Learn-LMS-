@@ -17,7 +17,7 @@ export default function RefundPage() {
   const { t, lang, num } = useLang();
   const { toast, confetti } = useApp();
   const location = useLocation();
-  useDocumentTitle(lang === 'bn' ? 'রিফান্ড পলিসি · NextLearn' : 'Refund policy · NextLearn');
+  useDocumentTitle(lang === 'bn' ? 'রিফান্ড পলিসি · Technofy Bangladesh' : 'Refund policy · Technofy Bangladesh');
 
   // Interactive Calculator state
   const [courseType, setCourseType] = useState('live'); // 'live' | 'rec'

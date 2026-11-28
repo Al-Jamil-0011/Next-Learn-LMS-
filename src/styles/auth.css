@@ -1,4 +1,4 @@
-/* ============ NextLearn Authentication Styles ============
+/* ============ Technofy Bangladesh Authentication Styles ============
    Prefix: au-
    Design tokens: --navy, --ink, --cobalt, --saffron, --coral, --mint, --soft, --line, shadows, easings
 ========================================================= */
@@ -204,6 +204,13 @@
   flex-direction: column;
   justify-content: center;
   background: #ffffff;
+}
+
+.au-card-logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 20px;
+  text-decoration: none;
 }
 
 .au-head {
@@ -720,7 +727,9 @@
   .au-stagger-4,
   .au-modal-backdrop,
   .au-modal-box,
-  .au-success-icon {
+  .au-success-icon,
+  .au-card-logo .tb-logo-badge,
+  .au-brand .tb-logo-badge {
     animation: none !important;
     transition: none !important;
     transform: none !important;

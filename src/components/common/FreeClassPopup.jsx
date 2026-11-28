@@ -123,8 +123,8 @@ export default function FreeClassPopup() {
 
             <p className="fc-lead">
               {bn
-                ? 'কর্মরত মেন্টরদের সাথে সরাসরি ক্লাস করুন, প্রশ্ন করুন এবং দেখুন NextLearn কীভাবে আপনার ক্যারিয়ার গড়তে সাহায্য করে।'
-                : 'Meet working industry mentors live, ask anything, and see firsthand how NextLearn helps launch your career.'}
+                ? 'কর্মরত মেন্টরদের সাথে সরাসরি ক্লাস করুন, প্রশ্ন করুন এবং দেখুন Technofy Bangladesh কীভাবে আপনার ক্যারিয়ার গড়তে সাহায্য করে।'
+                : 'Meet working industry mentors live, ask anything, and see firsthand how Technofy Bangladesh helps launch your career.'}
             </p>
 
             <ul className="fc-perks">

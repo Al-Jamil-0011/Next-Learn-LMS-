@@ -25,7 +25,7 @@ export default function CareerPage() {
   const navigate = useNavigate();
   const bn = lang === 'bn';
 
-  useDocumentTitle(bn ? 'ক্যারিয়ার · NextLearn' : 'Career · NextLearn');
+  useDocumentTitle(bn ? 'ক্যারিয়ার · Technofy Bangladesh' : 'Career · Technofy Bangladesh');
 
   const [dept, setDept] = useState('all');
   const [selectedJob, setSelectedJob] = useState(null);
@@ -88,8 +88,8 @@ export default function CareerPage() {
         title={bn ? 'দক্ষতা থেকে স্বপ্নের ক্যারিয়ারে।' : 'Turn practical skills into a real career.'}
         sub={
           bn
-            ? 'কোর্স শেষে পোর্টফোলিও রিভিউ, মক ইন্টারভিউ ও হায়ারিং পার্টনার রেফারেল — পাশাপাশি NextLearn টিমে যুক্ত হওয়ার সুযোগ।'
-            : 'Dedicated job placement support for learners — portfolio reviews, mock interviews & hiring partner referrals — plus open roles on the NextLearn team.'
+            ? 'কোর্স শেষে পোর্টফোলিও রিভিউ, মক ইন্টারভিউ ও হায়ারিং পার্টনার রেফারেল — পাশাপাশি Technofy Bangladesh টিমে যুক্ত হওয়ার সুযোগ।'
+            : 'Dedicated job placement support for learners — portfolio reviews, mock interviews & hiring partner referrals — plus open roles on the Technofy Bangladesh team.'
         }
       >
         <div className="co-teach-hero-actions">
@@ -102,7 +102,7 @@ export default function CareerPage() {
             className="btn btn-line"
             style={{ color: '#fff', borderColor: 'rgba(255,255,255,0.3)' }}
           >
-            <span>{bn ? 'NextLearn-এ চাকরির সুযোগ' : 'Open Roles at NextLearn'}</span>
+            <span>{bn ? 'Technofy Bangladesh-এ চাকরির সুযোগ' : 'Open Roles at Technofy Bangladesh'}</span>
           </a>
         </div>
       </PageHero>
@@ -180,12 +180,12 @@ export default function CareerPage() {
         </div>
       </section>
 
-      {/* Open Roles at NextLearn */}
+      {/* Open Roles at Technofy Bangladesh */}
       <section className="sec" id="open-roles">
         <div className="wrap">
           <SectionHead
-            eyebrow={bn ? 'আমাদের টিমে যোগ দিন' : 'Work at NextLearn'}
-            title={bn ? 'NextLearn-এর বর্তমান চাকরির সুযোগ।' : 'Help us build the future of learning.'}
+            eyebrow={bn ? 'আমাদের টিমে যোগ দিন' : 'Work at Technofy Bangladesh'}
+            title={bn ? 'Technofy Bangladesh-এর বর্তমান চাকরির সুযোগ।' : 'Help us build the future of learning.'}
             sub={
               bn
                 ? '৬৪ জেলার শিক্ষার্থীদের জন্য মানসম্মত শিক্ষা সহজলভ্য করতে আমাদের টিমের অংশ হোন।'
@@ -384,7 +384,7 @@ export default function CareerPage() {
           <h2 className="h2" style={{ fontSize: '1.45rem', color: 'var(--muted)' }}>
             {bn
               ? `আমাদের ${num(48000)}+ শিক্ষার্থী দেশ-বিদেশের যেসব প্রতিষ্ঠানে কাজ করছেন (নমুনা)`
-              : 'Teams where NextLearn alumni work (sample partners)'}
+              : 'Teams where Technofy Bangladesh alumni work (sample partners)'}
           </h2>
         </div>
         <div className="mq" aria-label="Hiring Partners">

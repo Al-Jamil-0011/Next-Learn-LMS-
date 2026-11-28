@@ -8,7 +8,7 @@ import useDocumentTitle from '../hooks/useDocumentTitle.js';
 import { finePointer, prefersReducedMotion } from '../utils/format.js';
 import { store } from '../utils/storage.js';
 import Icon from '../components/common/Icon.jsx';
-import { LogoMark } from '../components/common/Logo.jsx';
+import Logo from '../components/Logo.jsx';
 import PageHero from '../components/common/PageHero.jsx';
 import Reveal from '../components/common/Reveal.jsx';
 import Soon from '../components/common/Soon.jsx';
@@ -18,7 +18,7 @@ export default function VerifyPage() {
   const { t, lang } = useLang();
   const { toast } = useApp();
   const [searchParams, setSearchParams] = useSearchParams();
-  useDocumentTitle(lang === 'bn' ? 'সার্টিফিকেট যাচাই · NextLearn' : 'Verify a certificate · NextLearn');
+  useDocumentTitle(lang === 'bn' ? 'সার্টিফিকেট যাচাই · Technofy Bangladesh' : 'Verify a certificate · Technofy Bangladesh');
 
   const [inputVal, setInputVal] = useState('');
   const [status, setStatus] = useState('empty'); // 'empty' | 'format-error' | 'checking' | 'valid' | 'revoked' | 'not-found'
@@ -209,7 +209,7 @@ export default function VerifyPage() {
                 </div>
                 <div className="co-mock-cert" aria-hidden="true">
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <b style={{ color: 'var(--cobalt)', fontSize: '0.8rem' }}>NextLearn</b>
+                    <b style={{ color: 'var(--cobalt)', fontSize: '0.78rem' }}>Technofy Bangladesh</b>
                     <span style={{ width: 14, height: 14, borderRadius: '50%', background: 'var(--saffron)' }} />
                   </div>
                   <div className="co-mock-line" style={{ width: '60%', marginTop: 8 }} />
@@ -275,8 +275,7 @@ export default function VerifyPage() {
                     <div className="cert-in">
                       <div className="cert-top">
                         <span className="logo">
-                          <LogoMark />
-                          NextLearn
+                          <Logo variant="full" theme="light" size={32} />
                         </span>
                         <span className="seal">
                           <Icon name="award" />

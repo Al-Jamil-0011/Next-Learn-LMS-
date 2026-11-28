@@ -2,7 +2,7 @@ import { useApp } from '../../context/AppContext.jsx';
 import { useLang } from '../../context/LanguageContext.jsx';
 import { initials, photoKey } from '../../utils/format.js';
 import { IMAGES } from '../../data/images.js';
-import { BannerMark } from '../common/Logo.jsx';
+import { BannerMark } from '../Logo.jsx';
 import Media from '../common/Media.jsx';
 
 /** Designed course banner: gradient, short title, mentor arch photo and batch pill. */
@@ -31,7 +31,7 @@ export default function Banner({ course: c }) {
       </span>
       <span className="bl">
         <BannerMark />
-        NextLearn
+        Technofy Bangladesh
       </span>
       <div className="bt">
         {head}

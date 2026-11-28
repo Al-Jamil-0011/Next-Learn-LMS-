@@ -28,7 +28,7 @@ function StatBlock({ item }) {
 
 export default function AboutPage() {
   const { t, lang } = useLang();
-  useDocumentTitle(lang === 'bn' ? 'আমাদের সম্পর্কে · NextLearn' : 'About us · NextLearn');
+  useDocumentTitle(lang === 'bn' ? 'আমাদের সম্পর্কে · Technofy Bangladesh' : 'About us · Technofy Bangladesh');
 
   return (
     <div className="co-about-page">

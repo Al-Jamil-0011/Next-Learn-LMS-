@@ -65,7 +65,7 @@ const buildItems = (bn) => {
   ];
 };
 
-/** Left-to-right headline ticker displaying live course discount offers & NextLearn perks. */
+/** Left-to-right headline ticker displaying live course discount offers & Technofy Bangladesh perks. */
 export default function Logos() {
   const { lang } = useLang();
   const { toast } = useApp();

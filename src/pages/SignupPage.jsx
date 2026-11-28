@@ -4,6 +4,7 @@ import AuthVisual from '../components/auth/AuthVisual.jsx';
 import PasswordMeter from '../components/auth/PasswordMeter.jsx';
 import SocialButtons from '../components/auth/SocialButtons.jsx';
 import Icon from '../components/common/Icon.jsx';
+import Logo from '../components/Logo.jsx';
 import { useApp } from '../context/AppContext.jsx';
 import { useLang } from '../context/LanguageContext.jsx';
 import useDocumentTitle from '../hooks/useDocumentTitle.js';
@@ -15,7 +16,7 @@ export default function SignupPage() {
   const { confetti, toast } = useApp();
   const navigate = useNavigate();
 
-  useDocumentTitle(lang === 'bn' ? 'ফ্রি সাইন আপ · NextLearn' : 'Sign up free · NextLearn');
+  useDocumentTitle(lang === 'bn' ? 'ফ্রি সাইন আপ · Technofy Bangladesh' : 'Sign up free · Technofy Bangladesh');
 
   // Tab: 'email' or 'otp'
   const [tab, setTab] = useState('email');
@@ -149,7 +150,7 @@ export default function SignupPage() {
       store.set('nl-user', {
         name: name.trim(),
         mobile: mobile.trim(),
-        email: email.trim() || `${mobile.trim()}@learner.nextlearn.app`,
+        email: email.trim() || `${mobile.trim()}@learner.technofybd.com`,
         authType: tab,
         joinedAt: new Date().toISOString(),
       });
@@ -168,6 +169,9 @@ export default function SignupPage() {
 
         {/* Right Form Card */}
         <div className="au-card">
+          <Link to="/" className="au-card-logo" aria-label="Technofy Bangladesh home">
+            <Logo variant="full" theme="light" />
+          </Link>
           {isSuccess ? (
             <div className="au-success-card" role="status" aria-live="polite">
               <div className="au-success-icon">
@@ -440,7 +444,7 @@ export default function SignupPage() {
                     <span>
                       {lang === 'bn' ? (
                         <>
-                          আমি NextLearn-এর{' '}
+                          আমি Technofy Bangladesh-এর{' '}
                           <Link to="/refund-policy#terms">{t('au_terms_link')}</Link> ও{' '}
                           <Link to="/refund-policy">{t('au_refund_link')}</Link> মেনে নিচ্ছি
                         </>

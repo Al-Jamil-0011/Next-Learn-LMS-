@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Icon from '../common/Icon.jsx';
-import { LogoMark } from '../common/Logo.jsx';
+import Logo from '../Logo.jsx';
 import { IMAGES } from '../../data/images.js';
 import { useLang } from '../../context/LanguageContext.jsx';
 import { finePointer, prefersReducedMotion } from '../../utils/format.js';
@@ -54,9 +54,8 @@ export default function AuthVisual({ imgKey, quoteKey, badgeKey }) {
 
       {/* Top Header */}
       <div className="au-visual-top">
-        <Link to="/" className="au-brand" aria-label="NextLearn Home">
-          <LogoMark />
-          <span>NextLearn</span>
+        <Link to="/" className="au-brand" aria-label="Technofy Bangladesh home">
+          <Logo variant="full" theme="dark" size={34} />
         </Link>
         <Link to="/" className="au-back-link">
           <Icon name="arrow" small style={{ transform: 'rotate(180deg)' }} />

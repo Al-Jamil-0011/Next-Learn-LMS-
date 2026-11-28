@@ -7,15 +7,15 @@ export const ABOUT_DATA = {
       eyebrow: 'Our story',
       title: 'From a small Dhaka room to 64 districts',
       p1: 'In early 2021, three product builders in Dhaka saw a frustrating gap: millions of motivated young people across Bangladesh wanted to learn modern IT and career skills, but existing options were either overpriced, outdated, or in languages they struggled to connect with.',
-      p2: 'NextLearn was born with a single premise: live, project-based classes taught in native Bangla by industry mentors who actually practice the craft every day. From our very first batch of 40 learners, we proved that practical skills transcend geography.',
-      signature: 'Tanvir & the NextLearn team'
+      p2: 'Technofy Bangladesh was born with a single premise: live, project-based classes taught in native Bangla by industry mentors who actually practice the craft every day. From our very first batch of 40 learners, we proved that practical skills transcend geography.',
+      signature: 'Tanvir & the Technofy Bangladesh team'
     },
     bn: {
       eyebrow: 'আমাদের গল্প',
       title: 'ঢাকার ছোট একটি রুম থেকে ৬৪ জেলায়',
       p1: '২০২১ সালের শুরুতে ঢাকার একদল প্রযুক্তিপ্রেমী তরুণ লক্ষ্য করলেন এক বড় সংকট: লাখো বাংলাদেশি শিক্ষার্থী আধুনিক আইটি দক্ষতা শিখতে চায়, কিন্তু প্রচলিত কোর্সগুলো হয় অতিরিক্ত ব্যয়বহুল, নয়তো মানহীন বা জটিল ভাষায় তৈরি।',
-      p2: 'নেক্সটল্যার্ন গড়ে উঠেছে একটি সহজ বিশ্বাস নিয়ে: দেশের সেরা কর্মজীবী মেন্টরদের মাধ্যমে মাতৃভাষা বাংলায় প্র্যাকটিক্যাল, প্রজেক্টভিত্তিক লাইভ শিক্ষা। মাত্র ৪০ জনের প্রথম ব্যাচ থেকে শুরু করে আজ আমরা প্রমাণ করেছি যে মেধা ও শেখার আগ্রহ কোনো ভৌগোলিক সীমানায় আটকে থাকে না।',
-      signature: 'তানভীর ও নেক্সটল্যার্ন টিম'
+      p2: 'Technofy Bangladesh গড়ে উঠেছে একটি সহজ বিশ্বাস নিয়ে: দেশের সেরা কর্মজীবী মেন্টরদের মাধ্যমে মাতৃভাষা বাংলায় প্র্যাকটিক্যাল, প্রজেক্টভিত্তিক লাইভ শিক্ষা। মাত্র ৪০ জনের প্রথম ব্যাচ থেকে শুরু করে আজ আমরা প্রমাণ করেছি যে মেধা ও শেখার আগ্রহ কোনো ভৌগোলিক সীমানায় আটকে থাকে না।',
+      signature: 'তানভীর ও Technofy Bangladesh টিম'
     }
   },
   stats: [
@@ -103,7 +103,7 @@ export const ABOUT_DATA = {
     },
     {
       year: '2025',
-      en: { title: 'All 64 districts reached', desc: 'Every single district in Bangladesh now has learners taking live classes on NextLearn.' },
+      en: { title: 'All 64 districts reached', desc: 'Every single district in Bangladesh now has learners taking live classes on Technofy Bangladesh.' },
       bn: { title: '৬৪ জেলাতেই শিক্ষার্থী', desc: 'বাংলাদেশের প্রতিটি জেলা থেকে শিক্ষার্থীরা ঘরে বসেই লাইভ স্কিল শেখার সুযোগ পাচ্ছেন।' }
     },
     {
@@ -179,8 +179,8 @@ export const TEACH_DATA = {
     },
     {
       icon: 'rocket',
-      en: { title: 'Grow your personal brand', desc: 'Be featured in NextLearn campaigns, tech podcasts, keynote events, and recognized as an industry leader.' },
-      bn: { title: 'ব্যক্তিগত ব্র্যান্ড প্রতিষ্ঠা', desc: 'নেক্সটল্যার্নের প্রচারে ইন্ডাস্ট্রি বিশেষজ্ঞ হিসেবে পরিচিতি পান এবং শীর্ষস্থানীয় মেন্টর হিসেবে সুনাম অর্জন করুন।' }
+      en: { title: 'Grow your personal brand', desc: 'Be featured in Technofy Bangladesh campaigns, tech podcasts, keynote events, and recognized as an industry leader.' },
+      bn: { title: 'ব্যক্তিগত ব্র্যান্ড প্রতিষ্ঠা', desc: 'Technofy Bangladesh-এর প্রচারে ইন্ডাস্ট্রি বিশেষজ্ঞ হিসেবে পরিচিতি পান এবং শীর্ষস্থানীয় মেন্টর হিসেবে সুনাম অর্জন করুন।' }
     }
   ],
   steps: [
@@ -217,8 +217,8 @@ export const TEACH_DATA = {
       name: 'Farhana Akter',
       role: 'Product Designer at fintech startup',
       years: '2 years teaching · 5 batches',
-      en: 'NextLearn handled all the studio recording and student questions so I could focus purely on delivering high quality design reviews. Seeing my students join top Dhaka startups is the best reward.',
-      bn: 'নেক্সটল্যার্নের প্রোডাকশন ও স্টুডেন্ট সাপোর্ট টিম এত চমৎকার যে আমাকে শুধু ভালো পড়ানোতেই মনোযোগ দিতে হয়। আমার ছাত্রছাত্রীরা যখন বড় প্রতিষ্ঠানে চাকরি পায়, তখন আনন্দ ধরে রাখতে পারি না।'
+      en: 'Technofy Bangladesh handled all the studio recording and student questions so I could focus purely on delivering high quality design reviews. Seeing my students join top Dhaka startups is the best reward.',
+      bn: 'Technofy Bangladesh-এর প্রোডাকশন ও স্টুডেন্ট সাপোর্ট টিম এত চমৎকার যে আমাকে শুধু ভালো পড়ানোতেই মনোযোগ দিতে হয়। আমার ছাত্রছাত্রীরা যখন বড় প্রতিষ্ঠানে চাকরি পায়, তখন আনন্দ ধরে রাখতে পারি না।'
     },
     {
       mentorKey: 'sabbir',
@@ -234,7 +234,7 @@ export const TEACH_DATA = {
       role: 'Growth Lead for e-commerce',
       years: '2 years teaching · 6 batches',
       en: 'Teaching here built my reputation in Bangladesh’s digital marketing community. I’ve even hired two of my top students for our company’s marketing team.',
-      bn: 'নেক্সটল্যার্নে মেন্টরিং করে ইন্ডাস্ট্রিতে আমার ব্যক্তিগত ব্র্যান্ড অনেক শক্তিশালী হয়েছে। এমনকি আমার কোর্সের দুইজন সেরা শিক্ষার্থীকে আমাদের প্রতিষ্ঠানেই চাকরি দিয়েছি।'
+      bn: 'Technofy Bangladesh-এ মেন্টরিং করে ইন্ডাস্ট্রিতে আমার ব্যক্তিগত ব্র্যান্ড অনেক শক্তিশালী হয়েছে। এমনকি আমার কোর্সের দুইজন সেরা শিক্ষার্থীকে আমাদের প্রতিষ্ঠানেই চাকরি দিয়েছি।'
     }
   ],
   faqs: [
@@ -251,11 +251,11 @@ export const TEACH_DATA = {
     {
       en: {
         q: 'Who owns the course curriculum and video recordings?',
-        a: 'You retain full intellectual property ownership of your unique curriculum and code samples. NextLearn holds an exclusive license to host and distribute the recorded batch on our platform.'
+        a: 'You retain full intellectual property ownership of your unique curriculum and code samples. Technofy Bangladesh holds an exclusive license to host and distribute the recorded batch on our platform.'
       },
       bn: {
         q: 'কোর্সের কারিকুলাম ও ভিডিও রেকর্ডিংয়ের মালিকানা কার?',
-        a: 'আপনার তৈরি স্লাইড, কোড ও কারিকুলামের পূর্ণ বুদ্ধিবৃত্তিক মালিকানা আপনারই থাকবে। নেক্সটল্যার্ন কেবল প্ল্যাটফর্মে লাইভ ও রেকর্ডেড ক্লাস প্রদর্শনের স্বত্ব রাখে।'
+        a: 'আপনার তৈরি স্লাইড, কোড ও কারিকুলামের পূর্ণ বুদ্ধিবৃত্তিক মালিকানা আপনারই থাকবে। Technofy Bangladesh কেবল প্ল্যাটফর্মে লাইভ ও রেকর্ডেড ক্লাস প্রদর্শনের স্বত্ব রাখে।'
       }
     },
     {
@@ -352,15 +352,15 @@ export const VERIFY_DATA = {
       course: 'Digital Marketing with AI Tools',
       revokedDate: '12 Nov 2023',
       revokedDateBn: '১২ নভেম্বর ২০২৩',
-      reasonEn: 'Revoked due to violation of NextLearn academic integrity and project submission verification policy.',
-      reasonBn: 'প্রজেক্ট নকল ও নেক্সটল্যার্ন অ্যাকাডেমিক সততা নীতি লঙ্ঘনের কারণে এই সনদটি স্থায়ীভাবে বাতিল করা হয়েছে।'
+      reasonEn: 'Revoked due to violation of Technofy Bangladesh academic integrity and project submission verification policy.',
+      reasonBn: 'প্রজেক্ট নকল ও Technofy Bangladesh অ্যাকাডেমিক সততা নীতি লঙ্ঘনের কারণে এই সনদটি স্থায়ীভাবে বাতিল করা হয়েছে।'
     }
   },
   employerSteps: [
     {
       step: 1,
-      en: { title: 'Ask for the ID', desc: 'Candidates list their unique NextLearn credential ID (e.g. NL-24-08812) on their resume or LinkedIn.' },
-      bn: { title: 'সার্টিফিকেট আইডি সংগ্রহ', desc: 'প্রার্থী তাদের সিভি বা লিঙ্কডইন প্রোফাইলে নেক্সটল্যার্ন সার্টিফিকেট আইডি (যেমন NL-24-08812) উল্লেখ করেন।' }
+      en: { title: 'Ask for the ID', desc: 'Candidates list their unique Technofy Bangladesh credential ID (e.g. NL-24-08812) on their resume or LinkedIn.' },
+      bn: { title: 'সার্টিফিকেট আইডি সংগ্রহ', desc: 'প্রার্থী তাদের সিভি বা লিঙ্কডইন প্রোফাইলে Technofy Bangladesh সার্টিফিকেট আইডি (যেমন NL-24-08812) উল্লেখ করেন।' }
     },
     {
       step: 2,
@@ -375,7 +375,7 @@ export const VERIFY_DATA = {
   ],
   trustPoints: [
     { icon: 'award', en: { title: 'Unique ID', desc: 'Cryptographically issued ID on every record' }, bn: { title: 'ইউনিক আইডি', desc: 'প্রতিটি সনদে সুরক্ষিত অনন্য পরিচয় নম্বর' } },
-    { icon: 'lock', en: { title: 'Tamper-proof', desc: 'Directly validated against internal database' }, bn: { title: 'অপরিবর্তনযোগ্য রেকর্ড', desc: 'নেক্সটল্যার্ন মূল ডাটাবেজের সাথে সরাসরি যাচাই' } },
+    { icon: 'lock', en: { title: 'Tamper-proof', desc: 'Directly validated against internal database' }, bn: { title: 'অপরিবর্তনযোগ্য রেকর্ড', desc: 'Technofy Bangladesh মূল ডাটাবেজের সাথে সরাসরি যাচাই' } },
     { icon: 'clock', en: { title: 'Verified in seconds', desc: 'Zero waiting time or email back-and-forth' }, bn: { title: 'তাত্ক্ষণিক ফলাফল', desc: 'কোনো অপেক্ষা ছাড়া কয়েক সেকেন্ডেই যাচাই' } },
     { icon: 'checkc', en: { title: '100% Free', desc: 'Unlimited free lookups for HR & recruiters' }, bn: { title: 'নিয়োগকারীদের জন্য ফ্রি', desc: 'নিয়োগকারী ও কোম্পানির জন্য সম্পূর্ণ বিনামূল্যে' } }
   ]
@@ -477,7 +477,7 @@ export const REFUND_DATA = {
     {
       en: {
         q: 'Can I transfer to another course instead of taking a cash refund?',
-        a: 'Yes! You can choose to transfer 100% of your paid amount to any other live or recorded course on NextLearn without any transfer fee.'
+        a: 'Yes! You can choose to transfer 100% of your paid amount to any other live or recorded course on Technofy Bangladesh without any transfer fee.'
       },
       bn: {
         q: 'টাকা ফেরত না নিয়ে অন্য কোনো কোর্সে শিফট করা সম্ভব?',
@@ -510,11 +510,11 @@ export const REFUND_DATA = {
       id: 'eligibility',
       en: {
         title: '1. General Eligibility Criteria',
-        body: 'NextLearn offers a transparent, student-first refund policy designed to give learners total peace of mind. Every student enrolled in a paid live course or self-paced track is covered under our 7-day money-back guarantee, subject to the conditions outlined below. All requests must be submitted through our official online refund portal.'
+        body: 'Technofy Bangladesh offers a transparent, student-first refund policy designed to give learners total peace of mind. Every student enrolled in a paid live course or self-paced track is covered under our 7-day money-back guarantee, subject to the conditions outlined below. All requests must be submitted through our official online refund portal.'
       },
       bn: {
         title: '১. সাধারণ রিফান্ডের যোগ্যতা ও শর্তাবলী',
-        body: 'নেক্সটল্যার্ন শিক্ষার্থীদের স্বার্থে একটি সহজ ও স্বচ্ছ রিফান্ড পলিসি অনুসরণ করে। প্রতিটি পেইড লাইভ বা রেকর্ডেড কোর্সে ভর্তির পর শিক্ষার্থীরা ৭ দিনের ১০০% মানিব্যাক গ্যারান্টির আওতাভুক্ত থাকেন। যেকোনো রিফান্ডের আবেদন আমাদের অফিসিয়াল অনলাইন পোর্টালের মাধ্যমে দাখিল করতে হবে।'
+        body: 'Technofy Bangladesh শিক্ষার্থীদের স্বার্থে একটি সহজ ও স্বচ্ছ রিফান্ড পলিসি অনুসরণ করে। প্রতিটি পেইড লাইভ বা রেকর্ডেড কোর্সে ভর্তির পর শিক্ষার্থীরা ৭ দিনের ১০০% মানিব্যাক গ্যারান্টির আওতাভুক্ত থাকেন। যেকোনো রিফান্ডের আবেদন আমাদের অফিসিয়াল অনলাইন পোর্টালের মাধ্যমে দাখিল করতে হবে।'
       }
     },
     {
@@ -576,11 +576,11 @@ export const REFUND_DATA = {
       id: 'terms',
       en: {
         title: '7. Terms and Privacy Summary',
-        body: 'NextLearn complies with consumer protection and digital education standards in Bangladesh. Your mobile number, email, and transaction receipts are securely handled for authentication and recordkeeping. Course recordings remain protected by copyright and are for personal learning only.'
+        body: 'Technofy Bangladesh complies with consumer protection and digital education standards in Bangladesh. Your mobile number, email, and transaction receipts are securely handled for authentication and recordkeeping. Course recordings remain protected by copyright and are for personal learning only.'
       },
       bn: {
         title: '৭. শর্তাবলী ও গোপনীয়তা নীতিমালা (সংক্ষেপ)',
-        body: 'নেক্সটল্যার্ন ডিজিটাল সেবা ও ভোক্তা অধিকার আইন পুরোপুরি মেনে চলে। আপনার মোবাইল নম্বর ও লেনদেনের তথ্য অত্যন্ত সুরক্ষিতভাবে সংরক্ষণ করা হয়। কোর্সের সকল ভিডিও ও কনটেন্ট কেবল ব্যক্তিগত শিক্ষার উদ্দেশ্যে সংরক্ষিত।'
+        body: 'Technofy Bangladesh ডিজিটাল সেবা ও ভোক্তা অধিকার আইন পুরোপুরি মেনে চলে। আপনার মোবাইল নম্বর ও লেনদেনের তথ্য অত্যন্ত সুরক্ষিতভাবে সংরক্ষণ করা হয়। কোর্সের সকল ভিডিও ও কনটেন্ট কেবল ব্যক্তিগত শিক্ষার উদ্দেশ্যে সংরক্ষিত।'
       }
     }
   ]
@@ -633,7 +633,7 @@ export const CAREER_DATA = {
       fg: '#D9442A',
       en: {
         title: 'Hiring Partner Referrals',
-        desc: 'Top course graduates get fast-tracked to 60+ local startups, agencies, and remote companies hiring NextLearn alumni.'
+        desc: 'Top course graduates get fast-tracked to 60+ local startups, agencies, and remote companies hiring Technofy Bangladesh alumni.'
       },
       bn: {
         title: 'হায়ারিং পার্টনার রেফারেল',

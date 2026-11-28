@@ -15,7 +15,7 @@ export default function ContactPage() {
   const { toast, confetti } = useApp();
   const [form, setForm] = useState(EMPTY);
   const [err, setErr] = useState('');
-  useDocumentTitle('Contact · NextLearn');
+  useDocumentTitle('Contact · Technofy Bangladesh');
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
 
   const submit = (e) => {

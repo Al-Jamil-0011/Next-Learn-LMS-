@@ -67,7 +67,7 @@ export const TYPES=[
 
 export const CATIC={tech:'code',design:'pen',language:'mic',marketing:'mega',academic:'cap',office:'sheet',media:'cam',career:'rocket'};
 
-// Icon + colours for the 'Why NextLearn' features, free class steps and contact cards.
+// Icon + colours for the 'Why Technofy Bangladesh' features, free class steps and contact cards.
 export const FEATURE_ICONS=[['video','#ECEFFF','#2F47E8'],['proj','#E2F7EF','#0E8A5F'],['infinity','#FFF5D6','#B07A00'],['pay','#FFEAE5','#D9442A'],['award','#F0EBFF','#6A3FD1'],['headset','#E8EEF6','#2B3150']];
 export const STEP_ICONS=[['cal','#ECEFFF','#2F47E8'],['phone','#FFF5D6','#B07A00'],['video','#E2F7EF','#0E8A5F']];
 export const CONTACT_BG=['#ECEFFF','#E2F7EF','#FFF5D6','#FFEAE5'];

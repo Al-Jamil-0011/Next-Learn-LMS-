@@ -1,6 +1,6 @@
-# NextLearn — React
+# Technofy Bangladesh — React
 
-The NextLearn v6 website (Home, Courses, Course details, Success stories, Free class, Contact) as a
+The Technofy Bangladesh website (Home, Courses, Course details, Success stories, Free class, Contact) as a
 React project built with **Vite** and **React Router**. Every page, animation and interaction from the
 design demo is carried over: curtain page transitions, Bangla / English toggle, course filters and
 pagination, the course details buy card with live countdown and scroll-following tabs, the 3-step

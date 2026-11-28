@@ -11,7 +11,7 @@ import { coursePath, initials, photoKey } from '../utils/format.js';
 
 export default function StoriesPage() {
   const { t, x } = useLang();
-  useDocumentTitle('Success stories · NextLearn');
+  useDocumentTitle('Success stories · Technofy Bangladesh');
   return (
     <>
       <PageHero bg="bg_stories" crumb={t('nav4')} title={t('sp_t')} sub={t('sp_s')} />

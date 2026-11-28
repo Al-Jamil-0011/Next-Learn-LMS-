@@ -2,7 +2,7 @@ import { useState } from 'react';
 import useScroll from '../../hooks/useScroll.js';
 
 /**
- * Clearly-editable placeholders for NextLearn's primary direct-contact channels.
+ * Clearly-editable placeholders for Technofy Bangladesh's primary direct-contact channels.
  * Update URLs or phone numbers here.
  */
 export const LINKS = [
@@ -25,7 +25,7 @@ export const LINKS = [
     name: 'Messenger',
     title: 'Chat on Messenger',
     tip: 'Messenger',
-    url: 'https://m.me/nextlearn',
+    url: 'https://m.me/technofybd',
     color: '#0084FF',
     icon: (
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
@@ -39,7 +39,7 @@ export const LINKS = [
     name: 'LinkedIn',
     title: 'Connect on LinkedIn',
     tip: 'LinkedIn',
-    url: 'https://www.linkedin.com/company/nextlearn',
+    url: 'https://www.linkedin.com/company/technofy-bangladesh',
     color: '#0A66C2',
     icon: (
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
@@ -53,7 +53,7 @@ export const LINKS = [
     name: 'Telegram',
     title: 'Chat on Telegram',
     tip: 'Telegram',
-    url: 'https://t.me/nextlearn',
+    url: 'https://t.me/technofybd',
     color: '#229ED9',
     icon: (
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">

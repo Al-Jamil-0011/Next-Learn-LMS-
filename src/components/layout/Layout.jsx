@@ -31,7 +31,7 @@ export default function Layout({ children }) {
   const { overlayOn, closeAll } = useApp();
   const [shown, setShown] = useState(location);
   const [phase, setPhase] = useState('');
-  const [label, setLabel] = useState('NextLearn');
+  const [label, setLabel] = useState('Technofy Bangladesh');
   const shownPath = useRef(location.pathname);
   usePointerEffects();
 
@@ -57,7 +57,7 @@ export default function Layout({ children }) {
     const authKeys = { signup: 'signup', login: 'login' };
     const companyLabel = companyKeys[page] ? t(companyKeys[page]) : null;
     const authLabel = authKeys[page] ? t(authKeys[page]) : null;
-    setLabel(course ? course.s : nav ? t(nav.key) : companyLabel || authLabel || 'NextLearn');
+    setLabel(course ? course.s : nav ? t(nav.key) : companyLabel || authLabel || 'Technofy Bangladesh');
     setPhase('cover');
     let t2;
     const t1 = setTimeout(() => {
